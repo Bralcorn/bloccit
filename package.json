@@ -1,0 +1,11 @@
+{
+  "name": "bloccit",
+  "version": "1.0.0",
+  "description": "A Reddit-like application for users to discuss and share content",
+  "main": "\u001b[\u001b[C\u001b[\u001b[D\u001b[C\u001b[Csrc/server.js)",
+  "scripts": {
+    "test": "export NODE_ENV=test && jasmine"
+  },
+  "author": "",
+  "license": "ISC"
+}
