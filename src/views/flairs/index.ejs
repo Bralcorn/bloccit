@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+    <main class="container">
+      <% include ../static/partials/navbar.ejs %>
+      <div class="row">
+        <h1>Flairs</h1>
+        <div>
+          <a href="/flairs/new" class="btn btn-primary">New</a>
+        </div>
+        
+      </div>
+        
+
+      <ul class="list-group">
+        <% flairs.forEach((flair) => { %>
+          <li class="list-group-item">
+            <a href="/flairs/<%= flair.id %>"> <%= flair.name %> </a>
+          </li>
+        <% }) %>
+      </ul>
+
+    </main>
+  </body>
+</html>
